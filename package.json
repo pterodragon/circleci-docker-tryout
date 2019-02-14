@@ -1,0 +1,11 @@
+{
+  "name": "circleci-docker-tryout",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:pterodragon/circleci-docker-tryout.git",
+  "author": "wing <poonlokwing@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
