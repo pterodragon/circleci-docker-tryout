@@ -21,3 +21,4 @@ jobs:
             docker build -t pterodragon/p_demo_deploy:$TAG .
             docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
             docker push pterodragon/p_demo_deploy:$TAG
+            docker push pterodragon/p_demo_deploy
