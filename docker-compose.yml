@@ -6,3 +6,9 @@ services:
         container_name: cci_tryout_container
         image: cci_tryout
         command: yarn start
+    redis:
+        container_name: cci_tryout_redis
+        image: circleci/redis
+    postgres:
+        container_name: cci_tryout_postgres
+        image: circleci/postgres

@@ -1,4 +1,4 @@
 FROM pterodragon/p_demo
-RUN mkdir -p /code
+RUN sudo mkdir -p /code
 WORKDIR /code
 ADD . /code

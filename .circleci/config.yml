@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Start container and verify it's working  # including "$ yarn start"
           command: |
-            docker-compose up
+            docker-compose up -d run_app
       - deploy:
           name: Build and push Docker image
           command: |
