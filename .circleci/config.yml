@@ -1,12 +1,15 @@
 version: 2
 jobs:
-  build:
-    docker:
-        - image: pterodragon/p_demo
-    steps:
-        - checkout
-        - run: yarn install
-        - run: yarn start
-          # try if there's a tree command
-        - run: tree
+    build:
+        docker:
+            - image: pterodragon/p_demo
+              steps:
+                  - checkout
+                    # try if there's a tree command
+                  - run: tree
 
+                  - setup_remote_docker
+                  - run:
+                      name: Start container and verify it's working  # including "$ yarn start"
+                      command: |
+                          docker-compose up
