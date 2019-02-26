@@ -10,6 +10,6 @@ jobs:
 
       - setup_remote_docker
       - run:
-        name: Start container and verify it's working  # including "$ yarn start"
-        command: |
-          docker-compose up
+          name: Start container and verify it's working  # including "$ yarn start"
+          command: |
+            docker-compose up
