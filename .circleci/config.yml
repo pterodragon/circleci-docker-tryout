@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
-    - docker:
+    docker:
       image: pterodragon/p_demo
-    - steps:
+    steps:
       - checkout
         # try if there's a tree command
       - run: tree
